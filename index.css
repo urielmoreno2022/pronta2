@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+#form-font{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.text-pronta{
+    color:#FBBB36 !important;
+}
+
+
+.btn-platzi{
+    background-color: #97c93e;
+    color:white !important; /*para conservar el color blanco en el texto del botón*/
+}
+
+.btn-platzi:hover{ /*oscurezca un poco cuando pase el mouse*/
+    background-color: #5d811f;
+    
+}
+
+
+header img{
+    width: 140px;
+  }
+
+  
+#main .carousel-inner video{
+    height: 78vh;
+    object-fit: cover;
+    opacity: 0.95;
+    filter: grayscale(5%);
+    
+  
+}
+
+#carousel{
+    position: relative;
+}
+
+#carousel .overlay{
+    z-index: 1;
+    position:absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.42);
+    color:white;
+}
+
+/*para que el texto quede centrado verticalmente*/
+#carousel .overlay .container,
+#carousel .overlay .row{
+    height: 100%;
+}
+
+#footer { /*color del fondo del footer*/
+    background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5372);
+}
+
+#footer a { /*color de los enlaces*/
+    color: white;
+}
+
+#place-time img{
+   max-width: 100%;
+}
+#place-time{
+    background-color: #343a40;
+    color:white;
+}
+
+#place-time video{
+    max-width: 100%;
+ }
+
+h4{
+    color:#FBBB36;
+}
+h2{
+    color: #33214C ;
+    font-size: 40px;
+    text-align: left;
+}
+small{
+    color: #0d2a01 ;
+    font-size: 20px;
+    text-align: left;
+}
+
+.shrink{
+    width: 100%;
+    transition: 0.5s ease-in-out ;
+    background: #33214C;
+    position: fixed;
+    opacity: 0.9;
+}
+
+.top{
+    width: 100%;
+    transition: 0.5s ease-in-out ;
+}
+
+
+
+
+.contenedor {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contenedor figure{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    cursor:pointer;
+
+}
+
+
+
+.contenedor figure img{
+    height: 260px;
+    width: 100%;
+    transition: all 500ms ease-out;
+    
+}
+
+.contenedor figure .capa{
+    position: absolute;
+    top:0%;
+    height: 100%;
+    width: 100%;
+    background: rgba(67, 52, 95, 0.52);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    
+}
+
+.contenedor figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor figure:hover > .capa p{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.contenedor figure:hover > a img{
+    transform: scale(1.2);
+}
+
+.contenedor figure .capa p{
+    color:#ffff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 20px;
+    font-size: 23px;
+    
+}

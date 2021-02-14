@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous">
+    </script>
+
+    
+    <script src="menu.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/fontawesome.min.css">
+
+    <link rel="stylesheet" href="index.css">
+
+    <title>Pronta Engineering</title>
+   
+
+  </head>
+  <body id="form-font">
+   <!-- para el Scrollspy se agrega al body data-bs-spy="scroll" data-bs-target="#navbarSupportedContent" data-bs-offset="0"-->
+   <!--Header-->
+   <header>
+    <nav id="header" class="navbar navbar-expand-lg navbar-dark fixed-top " >
+            <!--Se le crea un id=header para los estilos-->
+            <!--cabiamos en la class el light por dark-->
+            <!-- para el Scrollspy se agrega la clase fixed-top-->
+         <div class="container">
+             <!--camiamos container-fluid por solamente container-->
+            <a class="navbar-brand " href="#">
+                <img src="img/pronta.png" alt="Pronta">
+                Pronta
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <!-- cambiamos me-auto por ms-auto-->
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#main">Home</a>
+                    <!--para el Scrollspy se agrega en href="#main"-->
+                    <!--Cambiamos Home por La conferencia-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#speakers">Nosotros</a>
+                    <!--para el Scrollspy se agrega en href="#speakers"-->
+                </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link " href="#place-time">Proyectos</a>
+                    <!--para el Scrollspy se agrega en href="#place-time"-->
+                    <!-- se crea la clase text-config para el color blanco del texto menu-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#convierte-orador">Servicios</a>
+                    <!--para el Scrollspy se agrega en href="#convierte-orador"-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-pronta" href="#" >Contáctenos</a>
+                    <!--Se crea la clase "text-platzi" -->
+                    <!--se copia para el modal: data-bs-toggle="modal" data-bs-target="#staticBackdrop" -->
+                </li>
+                </ul>
+                
+                <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-warning" type="submit">Search</button>
+                
+                </form>  
+                
+            </div>
+          </div>
+    </nav>
+   </header>
+
+   <!--Main-->
+   <main id="main" >
+       <!--para agregar un overlay cambiamos el id="carouselExampleFade"
+        por id="carousel"-->
+    <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+        <!--vamos agregar data-bs-pause="false", sirve para que no se realice una pausa
+        en las imagenes en el momento de tener el mouse sobre ellas-->
+        <div class="carousel-inner">
+          <div class="carousel-item active ">
+            <!--Colocamos la dirección correspondientes de las imagenes con su nombre-->
+            <video autoplay muted loop src="source/video_3.mp4" class="d-block w-100"  preload="auto"> 
+            <!--<img src="img/hawaii.jpg" class="d-block w-100" alt="Hawaii">-->
+          </div>
+          <div class="carousel-item">
+            <video  autoplay muted loop src="source/video_1.mp4" class="d-block w-100" preload="auto"> 
+          </div>
+          <div class="carousel-item">
+            <video autoplay muted loop src="source/video_2.mp4" class="d-block w-100" preload="auto"> 
+          </div>
+          <div class="overlay">
+              <div class="container">
+                  <div class="row align-items-center"><!--El texto quede centrado verticalmente-->
+                      <div class="col md-6 text-center text-md-start">
+                        <!--text-center: texto centrado para dispositivos pequeños
+                        text-md-end: texto a la derecha para dispositivos grandes-->
+                        <h1>Pronta Engineering</h1>
+                        <section class="d-none d-md-block">
+                        <!--d-none: el texto desaparce para dispositivos pequeños
+                        d-md-block: el texto aparece para dispositivos grandes-->
+                         <h4>Mejoramos la vida y las empresas</h4> 
+                         <h5>de nuestros clientes</h5> 
+                         <p>
+                         haciendo proyectos impecables.
+                         </p>
+                       </section> 
+                        <a href="#" class="btn btn-outline-warning">Conócenos <span style='font-size:18px'>&#x27A1;</span></a>
+                        
+                        <!--agregamos estilos al botón, no necesariamente debe ser un button. tambien puede ser aplicado a los link-->
+                        
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+       
+      </div>
+   </main>
+   <!--speaker-->
+   <speakers>
+     <section id="speakers" class="mt-4" >
+       <!--class="mt-4" para separar la sección de la anterior en este caso la de main.
+                 "mb-4" para separar la sección despues en este caso la de footer  -->
+       <div class="container">
+         <div class="row">
+           <div class="col display mb-3" >
+             <!--text-uppercase: texto en mayuscula-->
+             
+             <h2>Sumamos</h2> <small>La experiencia de más de 15 años de nuestros socios.
+            </small>
+           </div>
+         </div>
+         <div class="row">
+           <div class="col-12 col-md-6 col-lg-4 mb-4"> <!--md-4: ocupa 4 de las 12 columnas
+             se cambia por col-12 col-md-6 col-lg-4-->
+             <!--Aquí se pega todo el contenido de cards de bootstrap-->
+             <div class="contenedor border-0 ">
+              <!--Le quitamos el style al cards-->
+              <figure>
+                <a href="#main" ><img src="img/Speakers/clientes2.jpg" alt="Proyectos" ></a>
+              <div class="capa">
+                 <p > + 500 Proyectos</p>
+                
+              </div>
+            </figure>
+            </div>
+           </div>
+           <div class="col-12 col-md-6 col-lg-4 mb-4"> <!--md-4: ocupa 4 de las 12 columnas
+            se cambia por col-12 col-md-6 col-lg-4-->
+            <!--Aquí se pega todo el contenido de cards de bootstrap-->
+            <div class="contenedor border-0">
+             <!--Le quitamos el style al cards-->
+             <figure>
+             <a href="#main" ><img src="img/Speakers/empresa1.jpg"  alt="Clientes"></a>
+             <div class="capa">
+                  <p >+ 100 Clientes</p>
+               
+             </div>
+            </figure>
+           </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4"> <!--md-4: ocupa 4 de las 12 columnas
+            se cambia por col-12 col-md-6 col-lg-4-->
+            <!--Aquí se pega todo el contenido de cards de bootstrap-->
+            <div class="contenedor border-0">
+             <!--Le quitamos el style al cards-->
+             <figure>
+             <a href="#main"><img src="img/Speakers/proyecto2.jpg" alt="Paises"></a>
+             <div class="capa">
+               <p>+ 7 Países <br>
+                Estados Unidos, México, Perú, Chile, Argentina, Brasil, Australia, Colombia
+              </p>
+               <!--Quitamos  el botón
+               <a href="#" class="btn btn-primary">Go somewhere</a>
+               -->
+             </div>
+            </figure>
+           </div>
+          </div>
+          
+         </div>
+       </div>
+     </section>
+   </speakers>
+
+   <!--Lugar y fecha del evento-->
+   <section id="place-time" class="mb-4">
+     <div class="container-fluid">
+       <div class="row">
+         <div class="col-12 col-lg-6 px-0">
+           <!--para quitar espacio de padding px-0 o tambien ps-0 pe-0-->
+           <img src="img/Speakers/empresa.jpeg"  alt="Honolulu">
+         </div>
+         <div class="col-12 col-lg-6 pt-4 pb-4"><!--El contenido empiece un poco más abajo-->
+          <h1>Pronta Engineering</h1>
+           <br><br>
+           <h4>Mejoramos la vida y las empresas</h4> 
+           <h5>de nuestros clientes</h5> 
+           <p>
+            Evolucionamos la tradicional estructura de hacer proyectos, entregando eficiencia y liberando a nuestros clientes de costos indirectos e ineficiencias.
+            </p>
+           <!--Agregamos un botón-->
+           <a class="btn btn-outline-light" href="#">Conoce más</a>
+         </div>
+       </div>
+     </div>
+   </section>
+
+  <!--Footer-->
+  <section class="mt-4">
+   <footer id="footer" class="pb-4 pt-4"><!--agregar padding al footer-->
+    <div class="container" >
+      <div class="row text-center">
+        <div class="col-12 col-lg">
+         <a href="#">Preguntas Frecuentes</a>
+        </div>
+        <div class="col-12 col-lg">
+            <a href="#">Contáctanos</a>
+        </div>
+       
+        <div class="col-12 col-lg">
+            <a href="#">Términos y condiciones</a>
+        </div>
+        <div class="col-12 col-lg">
+            <a href="#">Privacidad</a>
+        </div>
+        
+      </div>
+    </div>
+   </footer>
+
+  </section>
+  
+    <!--cambiar el color del menú con query-->
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    -->
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    
+    
+    
+
+  </body>
+</html>
